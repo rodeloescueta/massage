@@ -21,6 +21,14 @@ const Hero = () => {
         {/* first col */}
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2>{hero.title}</h2>
+          <p className="text-right pt-4 text-slate-400">{hero.text}</p>
+          <p className="text-right text-slate-400">{hero.cerial}</p>
+          <img
+            src={hero.logo}
+            data-aos="slide-up"
+            alt="..."
+            className="h-25 md:h-30 object-contain text-right"
+          />
           <br />
           <div className="flex justify-end">
             <button className="btn">{hero.btnText}</button>
@@ -42,13 +50,13 @@ const Hero = () => {
         </div>
 
         {/* sec col */}
-        <div className="md:h-[37rem] h-96">
-          <img
-            src={hero.image}
-            data-aos="slide-up"
-            alt="..."
-            className="h-full object-cover"
-          />
+        <div className="md:h-[37rem] h-56">
+          {/* <img
+          src={hero.logo}
+          data-aos="slide-up"
+          alt="..."
+          className="slide-up h-30 top-[50%] left-[-15%]"
+        /> */}
         </div>
       </div>
     </section>

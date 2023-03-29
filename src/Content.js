@@ -1,5 +1,6 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
+import Hero_logo from "./assets/images/Hero/logo2.png";
 
 import figma from "./assets/images/Skills/figma.png";
 import sketch from "./assets/images/Skills/sketch.png";
@@ -8,14 +9,14 @@ import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 
-import services_logo1 from "./assets/images/Services/logo1.png";
-import services_logo2 from "./assets/images/Services/logo2.png";
-import services_logo3 from "./assets/images/Services/logo3.png";
+import services_logo1 from "./assets/images/Services/logo1.svg";
+import services_logo2 from "./assets/images/Services/logo2.svg";
+import services_logo3 from "./assets/images/Services/logo3.svg";
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
-import person_project from "./assets/images/projects/person.png";
+import project1 from "./assets/images/Projects/img1.png";
+import project2 from "./assets/images/Projects/img2.png";
+import project3 from "./assets/images/Projects/img3.png";
+import person_project from "./assets/images/Projects/person.png";
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
@@ -40,38 +41,41 @@ export const content = {
       link: "#home",
       icon: TbSmartHome,
     },
-    {
-      link: "#skills",
-      icon: BiUser,
-    },
+    // {
+    //   link: "#skills",
+    //   icon: BiUser,
+    // },
     {
       link: "#services",
       icon: RiServiceLine,
     },
-    {
-      link: "#projects",
-      icon: RiProjectorLine,
-    },
+    // {
+    //   link: "#projects",
+    //   icon: RiProjectorLine,
+    // },
     {
       link: "#contact",
       icon: MdOutlinePermContactCalendar,
     },
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
-    btnText: "Hire Me",
+    title: "Massage Remedial Care LLC",
+    text: "Professional/License Massage Therapist",
+    cerial: "562-708-0127",
+    firstName: "Deneb",
+    LastName: "Romero",
+    btnText: "Talk to Us",
     image: Hero_person,
+    logo: Hero_logo,
     hero_content: [
       {
         count: "8+",
-        text: "Years of Experinse in Web development",
+        text: "Years of experience in Massage Therapy",
       },
-      {
-        count: "20+",
-        text: "Projects Worked in my career",
-      },
+      // {
+      //   count: "20+",
+      //   text: "Projects Worked in my career",
+      // },
     ],
   },
   skills: {
@@ -113,20 +117,20 @@ export const content = {
   },
   services: {
     title: "Services",
-    subtitle: "WHAT I OFFER",
+    subtitle: "Certified in:",
     service_content: [
       {
-        title: "Web Development",
+        title: "Stretching/Physical Therapy Aide",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
         logo: services_logo1,
       },
       {
-        title: "ui / ux DESIGNING",
+        title: "Oncology Massage",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
         logo: services_logo2,
       },
       {
-        title: "PhotoShop Editing",
+        title: "Pre-Natal & Hot Stone",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
         logo: services_logo3,
       },
@@ -194,19 +198,19 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "daneb@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:daneb@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+94 1234 56789",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "#",
       },
       {
-        text: "codeaprogram",
+        text: "danebtherapy",
         icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
+        link: "#",
       },
     ],
   },
