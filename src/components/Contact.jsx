@@ -13,7 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
       )
       .then(
         (result) => {
@@ -34,9 +37,12 @@ const Contact = () => {
     <section className="bg-dark_primary text-white" id="contact">
       <Toaster />
       <div className="md:container px-5 py-14">
-        <h2 className="title !text-white" data-aos="fade-down">
-          {Contact.title}
-        </h2>
+        <div className="flex md:justify-start justify-end">
+          <h2 className="title !text-white" data-aos="fade-down">
+            {Contact.title}
+          </h2>
+        </div>
+
         <h4 className="subtitle" data-aos="fade-down">
           {Contact.subtitle}
         </h4>

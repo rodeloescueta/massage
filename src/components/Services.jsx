@@ -5,9 +5,11 @@ const Services = () => {
   return (
     <section id="services">
       <div className="md:container px-5 py-14">
-        <h2 className="title" data-aos="fade-down">
-          {services.title}
-        </h2>
+        <div className="flex md:justify-start justify-end">
+          <h2 className="title" data-aos="fade-down">
+            {services.title}
+          </h2>
+        </div>
         <h4 className="subtitle" data-aos="fade-down">
           {services.subtitle}
         </h4>

@@ -1,13 +1,16 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
 import Hero_logo from "./assets/images/Hero/logo2.png";
+import Hero_logo2 from "./assets/images/Hero/logo-preview.png";
 
-import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
-import reactjs from "./assets/images/Skills/react.png";
-import nodejs from "./assets/images/Skills/node.png";
-import python from "./assets/images/Skills/python.png";
+import remedy from "./assets/images/Skills/remedy.png";
+import hotStone from "./assets/images/Skills/hot-stone.png";
+import stretch from "./assets/images/Skills/stretch.png";
+import natal from "./assets/images/Skills/natal.png";
+import soothing from "./assets/images/Skills/soothing.png";
+import addOn from "./assets/images/Skills/add-on.png";
+import package1 from "./assets/images/Skills/package-1.png";
+import package2 from "./assets/images/Skills/package-2.png";
 
 import services_logo1 from "./assets/images/Services/logo1.svg";
 import services_logo2 from "./assets/images/Services/logo2.svg";
@@ -28,26 +31,31 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall } from "react-icons/md";
+import {
+  MdArrowForward,
+  MdCall,
+  MdPriceCheck,
+  MdLocationPin,
+} from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
-
 export const content = {
   nav: [
     {
       link: "#home",
       icon: TbSmartHome,
     },
-    // {
-    //   link: "#skills",
-    //   icon: BiUser,
-    // },
+
     {
       link: "#services",
       icon: RiServiceLine,
+    },
+    {
+      link: "#pricing",
+      icon: MdPriceCheck,
     },
     // {
     //   link: "#projects",
@@ -60,57 +68,141 @@ export const content = {
   ],
   hero: {
     title: "Massage Remedial Care LLC",
-    text: "Professional/License Massage Therapist",
-    cerial: "562-708-0127",
+    text: "3950 Hardwick St. Lakewood CA 90712, SUITE 206",
+    // cerial: "562-708-0127",
     firstName: "Deneb",
     LastName: "Romero",
     btnText: "Talk to Us",
-    image: Hero_person,
-    logo: Hero_logo,
+    image: Hero_logo2,
+    logo: Hero_logo2,
     hero_content: [
+      // {
+      //   count: "Address",
+      //   text: "3950 Hardwick St. Lakewood CA 90712, SUITE 206",
+      // },
+      {
+        count: "562-708-0127",
+        text: "Professional/License Massage Therapist",
+      },
       {
         count: "8+",
         text: "Years of experience in Massage Therapy",
       },
-      // {
-      //   count: "20+",
-      //   text: "Projects Worked in my career",
-      // },
     ],
   },
-  skills: {
-    title: "Skills",
-    subtitle: "MY TOP SKILLS",
-    skills_content: [
+  pricing: {
+    title: "Pricing",
+    // subtitle: "MY TOP SKILLS",
+    pricing_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "Remedy Massage",
+        prices: [
+          {
+            min: "60 mins",
+            price: "$100.00",
+          },
+          {
+            min: "90 mins",
+            price: "$150.00",
+          },
+        ],
+        logo: remedy,
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
+        name: "Soothing Massage",
+        prices: [
+          {
+            min: "60 mins",
+            price: "$80.00",
+          },
+          {
+            min: "90 mins",
+            price: "$120.00",
+          },
+        ],
+        logo: soothing,
       },
       {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "Assisted Stretch",
+        prices: [
+          {
+            min: "30 mins",
+            price: "$50.00",
+          },
+          {
+            min: "60 mins",
+            price: "$100.00",
+          },
+        ],
+        logo: stretch,
       },
       {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
-        logo: reactjs,
+        name: "Pre-Natal Massage",
+        prices: [
+          {
+            min: "60 mins",
+            price: "$90.00",
+          },
+          {
+            min: "90 mins",
+            price: "$135.00",
+          },
+        ],
+        logo: natal,
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "Hot Stone Massage",
+        prices: [
+          {
+            min: "60 mins",
+            price: "$120.00",
+          },
+          {
+            min: "90 mins",
+            price: "$180.00",
+          },
+        ],
+        logo: hotStone,
       },
       {
-        name: "Python",
-        para: "Lorem ipsum text  dummy",
-        logo: python,
+        name: "Add-on Service",
+        prices: [
+          {
+            label: "Aroma Therapy",
+            price: "$10.00",
+          },
+          {
+            label: "Hot/Cold Cream for pain",
+            price: "$15.00",
+          },
+          {
+            label: "Sugar Scrub",
+            price: "$15.00",
+          },
+        ],
+        logo: addOn,
+      },
+      {
+        name: "Stress Remedy Package",
+        prices: [
+          {
+            label: "Hot Stone w/ Aromatherapy",
+            price: "$185.00",
+            min: "90 mins",
+          },
+        ],
+        logo: package1,
+      },
+      {
+        name: "Pain Remedy Package",
+        prices: [
+          {
+            label: "Combination Deep Tissue",
+            price: "$155.00",
+            min: "90 mins",
+          },
+        ],
+        logo: package2,
       },
     ],
     icon: MdArrowForward,
@@ -198,18 +290,23 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "daneb@gmail.com",
+        text: "massageremedicalcarellc@gmail.com",
         icon: GrMail,
-        link: "mailto:daneb@gmail.com",
+        link: "mailto:massageremedicalcarellc@gmail.com",
       },
       {
-        text: "+94 1234 56789",
+        text: "#562-708-0039",
         icon: MdCall,
         link: "#",
       },
       {
-        text: "danebtherapy",
+        text: "massage_remedial_care_llc",
         icon: BsInstagram,
+        link: "https://www.instagram.com/massage_remedial_care_llc/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR10NECzQCBOv2KjIGt4MIkuWqC_vbK4toHkuY064f99x2wYl1DeGlUIzXA",
+      },
+      {
+        text: "3950 Hardwick St. Lakewood CA 90712, Suite 206",
+        icon: MdLocationPin,
         link: "#",
       },
     ],
