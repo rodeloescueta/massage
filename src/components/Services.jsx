@@ -25,7 +25,7 @@ const Services = () => {
             >
               <img src={content.logo} alt="..." className="mx-auto h-20 w-20" />
               <h6 className="my-3">{content.title}</h6>
-              <p className="leading-7">{content.para}</p>
+              {/* <p className="leading-7">{content.para}</p> */}
             </div>
           ))}
         </div>

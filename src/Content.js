@@ -1,7 +1,7 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
 import Hero_logo from "./assets/images/Hero/logo2.png";
-import Hero_logo2 from "./assets/images/Hero/logo-preview.png";
+import Hero_logo2 from "./assets/images/Hero/logoblue.png";
 
 import remedy from "./assets/images/Skills/remedy.png";
 import hotStone from "./assets/images/Skills/hot-stone.png";
@@ -12,9 +12,11 @@ import addOn from "./assets/images/Skills/add-on.png";
 import package1 from "./assets/images/Skills/package-1.png";
 import package2 from "./assets/images/Skills/package-2.png";
 
-import services_logo1 from "./assets/images/Services/logo1.svg";
-import services_logo2 from "./assets/images/Services/logo2.svg";
-import services_logo3 from "./assets/images/Services/logo3.svg";
+import services_logo1 from "./assets/images/Services/stretch.png";
+import services_logo2 from "./assets/images/Services/therapy.png";
+import services_logo3 from "./assets/images/Services/oncology.png";
+import services_logo4 from "./assets/images/Services/preNatal.png";
+import services_logo5 from "./assets/images/Services/hotStone.png";
 
 import project1 from "./assets/images/Projects/img1.png";
 import project2 from "./assets/images/Projects/img2.png";
@@ -37,7 +39,7 @@ import {
   MdPriceCheck,
   MdLocationPin,
 } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsFacebook } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
@@ -69,24 +71,19 @@ export const content = {
   hero: {
     title: "Massage Remedial Care LLC",
     text: "3950 Hardwick St. Lakewood CA 90712, SUITE 206",
-    // cerial: "562-708-0127",
     firstName: "Deneb",
     LastName: "Romero",
     btnText: "Talk to Us",
     image: Hero_logo2,
     logo: Hero_logo2,
     hero_content: [
-      // {
-      //   count: "Address",
-      //   text: "3950 Hardwick St. Lakewood CA 90712, SUITE 206",
-      // },
       {
-        count: "562-708-0127",
-        text: "Professional/License Massage Therapist",
+        count: "10+",
+        text: "Years of experience in Massage Therapy",
       },
       {
-        count: "8+",
-        text: "Years of experience in Massage Therapy",
+        count: "28315",
+        text: "Professional/License Massage Therapist",
       },
     ],
   },
@@ -212,19 +209,29 @@ export const content = {
     subtitle: "Certified in:",
     service_content: [
       {
-        title: "Stretching/Physical Therapy Aide",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Stretching",
+        para: "Reduced muscle tension. Increased circulation of the blood to various parts of the body. Enhanced muscular coordination.",
         logo: services_logo1,
       },
+      // {
+      //   title: "Physical Therapy Aide",
+      //   para: "Reduced muscle tension. Increased circulation of the blood to various parts of the body. Enhanced muscular coordination.",
+      //   logo: services_logo2,
+      // },
       {
         title: "Oncology Massage",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
+        para: "Better ability to tolerate cancer treatment side effects. Better sleep and fewer headaches. Less chemotherapy-induced peripheral neuropathy (numbness) ",
+        logo: services_logo3,
       },
       {
-        title: "Pre-Natal & Hot Stone",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
+        title: "Pre-Natal",
+        para: "Research shows prenatal massage therapy can help reduce anxiety, decrease symptoms of depression, relieve muscle aches and joint pains, and improve labor outcomes and newborn health.",
+        logo: services_logo4,
+      },
+      {
+        title: "Hot Stone",
+        para: "Helps relieve muscle tension and pain. Heat has long been used to ease muscle tension and pain. It can reduces stress and anxiete and promotes sleep.",
+        logo: services_logo5,
       },
     ],
   },
@@ -286,11 +293,11 @@ export const content = {
     btnText: "Hire Me",
   },
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "massageremedicalcarellc@gmail.com",
+        text: "massageremedialcarellc@gmail.com",
         icon: GrMail,
         link: "mailto:massageremedicalcarellc@gmail.com",
       },
@@ -298,6 +305,11 @@ export const content = {
         text: "#562-708-0039",
         icon: MdCall,
         link: "#",
+      },
+      {
+        text: "Massage Remedial Care LLC",
+        icon: BsFacebook,
+        link: "https://www.facebook.com/messages/t/100987332809146",
       },
       {
         text: "massage_remedial_care_llc",
@@ -310,6 +322,13 @@ export const content = {
         link: "#",
       },
     ],
+  },
+  Location: {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
   },
   Footer: {
     text: "All © Copy Right Reserved 2022",

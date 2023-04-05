@@ -127,7 +127,7 @@ const Pricing = () => {
                       )}
                     </div>
                   ))}
-                {/* <div
+                <div
                   onClick={() => {
                     setSelectSkill(price);
                     openModal();
@@ -135,7 +135,7 @@ const Pricing = () => {
                   className="text-xl absolute top-3 right-3"
                 >
                   {createElement(pricing.icon)}
-                </div> */}
+                </div>
               </div>
             </div>
           ))}
