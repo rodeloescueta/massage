@@ -74,6 +74,7 @@ export const content = {
     firstName: "Deneb",
     LastName: "Romero",
     btnText: "Talk to Us",
+    link: "https://www.facebook.com/messages/t/100987332809146",
     image: Hero_logo2,
     logo: Hero_logo2,
     hero_content: [
@@ -104,6 +105,12 @@ export const content = {
           },
         ],
         logo: remedy,
+        benefits: [
+          "Stimulate the blood supply",
+          "Make joints more mobile",
+          "Help to repair damaged tissues",
+          "The therapist will aim to balance the length, tone and tension of muscles and tendons, which restores the correct position of the bones, increases blood flow and helps heal injuries",
+        ],
       },
       {
         name: "Soothing Massage",
@@ -118,6 +125,12 @@ export const content = {
           },
         ],
         logo: soothing,
+        benefits: [
+          "Help reduce stress",
+          "Lessen pain and muscle tightness",
+          "Increase relaxation",
+          "Improve the work of the immune system",
+        ],
       },
       {
         name: "Assisted Stretch",
@@ -132,6 +145,12 @@ export const content = {
           },
         ],
         logo: stretch,
+        benefits: [
+          "Improve your core strength and posture",
+          "Enhance your athletic performance while reducing your recovery time",
+          "Lower your stress levels",
+          "Improve your sleep and boost your energy",
+        ],
       },
       {
         name: "Pre-Natal Massage",
@@ -146,6 +165,13 @@ export const content = {
           },
         ],
         logo: natal,
+        benefits: [
+          "Reducing labor pain during childbirth",
+          "Lessening postoperative pain",
+          "Reducing anxiety and stress.",
+          "Improving mood + lifting depression",
+          "Easing insomnia",
+        ],
       },
       {
         name: "Hot Stone Massage",
@@ -160,6 +186,16 @@ export const content = {
           },
         ],
         logo: hotStone,
+        benefits: [
+          "Comforting and relaxing",
+          "The heat aids depth",
+          "Relief from tension and pain",
+          "Relief from stress and anxiety",
+          "Aids sleep",
+          "Immune boosting",
+          "Managing chronic pain",
+          "Cancer management",
+        ],
       },
       {
         name: "Add-on Service",
@@ -178,6 +214,7 @@ export const content = {
           },
         ],
         logo: addOn,
+        benefits: null,
       },
       {
         name: "Stress Remedy Package",
@@ -189,6 +226,7 @@ export const content = {
           },
         ],
         logo: package1,
+        benefits: null,
       },
       {
         name: "Pain Remedy Package",
@@ -200,6 +238,7 @@ export const content = {
           },
         ],
         logo: package2,
+        benefits: null,
       },
     ],
     icon: MdArrowForward,
@@ -260,28 +299,28 @@ export const content = {
     testimonials_content: [
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+          "“Deneb has been my massage therapist for 10 years!!  From the get-go She has provided me great relief during my flare-ups, muscle fatigue and aches. Deneb immediately learned my preferences and needs and was in tune with my sensitivity assisting me with faster recovery so I can bounce back. *As long as she is in business.. So am I !! And let me include very professional, and always on time with my appointment.”",
         img: avatar1,
-        name: "JOHN DOE",
+        name: "Kandace Sands",
       },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
-      },
+      // {
+      //   review:
+      //     "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+      //   img: avatar2,
+      //   name: "Tom Alex",
+      // },
+      // {
+      //   review:
+      //     "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+      //   img: avatar3,
+      //   name: "Johnny",
+      // },
+      // {
+      //   review:
+      //     "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+      //   img: avatar4,
+      //   name: "ROBBIN",
+      // },
     ],
   },
   Hireme: {
@@ -297,24 +336,24 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "massageremedialcarellc@gmail.com",
-        icon: GrMail,
-        link: "mailto:massageremedicalcarellc@gmail.com",
-      },
-      {
-        text: "#562-708-0039",
-        icon: MdCall,
-        link: "#",
-      },
-      {
         text: "Massage Remedial Care LLC",
         icon: BsFacebook,
         link: "https://www.facebook.com/messages/t/100987332809146",
       },
       {
+        text: "massageremedialcarellc@gmail.com",
+        icon: GrMail,
+        link: "mailto:massageremedicalcarellc@gmail.com",
+      },
+      {
         text: "massage_remedial_care_llc",
         icon: BsInstagram,
         link: "https://www.instagram.com/massage_remedial_care_llc/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR10NECzQCBOv2KjIGt4MIkuWqC_vbK4toHkuY064f99x2wYl1DeGlUIzXA",
+      },
+      {
+        text: "#562-708-0039",
+        icon: MdCall,
+        link: "#",
       },
       {
         text: "3950 Hardwick St. Lakewood CA 90712, Suite 206",

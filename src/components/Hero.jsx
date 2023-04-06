@@ -1,6 +1,7 @@
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
+
 const Hero = () => {
   const { hero } = content;
 
@@ -33,7 +34,9 @@ const Hero = () => {
           <p className="text-right text-slate-600">{hero.cerial}</p>
           <br />
           <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+            <a href={hero.link} className="btn" target="_blank">
+              {hero.btnText}
+            </a>
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
@@ -52,16 +55,6 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
-        {/* sec col */}
-        {/* <div className="md:h-[47rem] h-15">
-          <img
-            src={hero.image}
-            data-aos="slide-up"
-            alt="..."
-            className="h-full object-cover"
-          />
-        </div> */}
       </div>
     </section>
   );

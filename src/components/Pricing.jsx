@@ -48,16 +48,9 @@ const Pricing = () => {
         </div>
         <br />
         <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
+          {selectSkill?.benefits.map((el, i) => {
+            return <li key={i}>{el}</li>;
+          })}
         </ul>
         <br />
         <div className="flex justify-end">
@@ -127,15 +120,18 @@ const Pricing = () => {
                       )}
                     </div>
                   ))}
-                <div
-                  onClick={() => {
-                    setSelectSkill(price);
-                    openModal();
-                  }}
-                  className="text-xl absolute top-3 right-3"
-                >
-                  {createElement(pricing.icon)}
-                </div>
+
+                {price.benefits && (
+                  <div
+                    onClick={() => {
+                      setSelectSkill(price);
+                      openModal();
+                    }}
+                    className="text-xl absolute top-3 right-3"
+                  >
+                    {createElement(pricing.icon)}
+                  </div>
+                )}
               </div>
             </div>
           ))}
