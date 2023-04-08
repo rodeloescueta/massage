@@ -49,7 +49,11 @@ const Testimonials = () => {
                border-slate-200 md:flex-row flex-col
                 ${activeIndex !== i && "scale-75 blur-sm"}`}
               >
-                <img src={content.img} alt="..." className="h-16" />
+                <img
+                  src={content.img}
+                  alt="..."
+                  className="w-16 rounded-full ring-2 ring-icon"
+                />
                 <div>
                   <p className="sm:text-base text-sm">{content.review}</p>
 
