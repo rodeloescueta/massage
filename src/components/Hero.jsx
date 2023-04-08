@@ -48,9 +48,7 @@ const Hero = () => {
             ${i === 1 ? " w-80" : " w-140"}  `}
               >
                 <p className="md:text-3xl text-xs">{content.count}</p>
-                <p>
-                  {content.text} {i}
-                </p>
+                <p>{content.text}</p>
               </div>
             ))}
           </div>

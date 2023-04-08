@@ -209,6 +209,10 @@ export const content = {
             label: "Sugar Scrub",
             price: "$15.00",
           },
+          {
+            label: "Cupping",
+            price: "$20.00",
+          },
         ],
         logo: addOn,
         benefits: null,
