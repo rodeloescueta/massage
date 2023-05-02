@@ -1,6 +1,7 @@
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
+// import { Helmet } from "react-helmet";
 
 const Hero = () => {
   const { hero } = content;
@@ -37,6 +38,15 @@ const Hero = () => {
             <a href={hero.link} className="btn" target="_blank">
               {hero.btnText}
             </a>
+            {/* <Helmet>
+              <script type="text/javascript">
+                var host = (('https:' == document.location.protocol) ?
+                'https://' : 'http://'); var params = "?size=small&color=blue";
+                document.write(unescape('%3Cscript src="' + host +
+                'massageremedialcare.clinicsense.com/book_widget/') + params +
+                unescape('" type="text/javascript"%3E%3C/script%3E'));
+              </script>
+            </Helmet> */}
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (

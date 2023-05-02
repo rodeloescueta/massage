@@ -70,8 +70,8 @@ export const content = {
     text: "3950 Hardwick St. Lakewood CA 90712, SUITE 206",
     firstName: "Deneb",
     LastName: "Romero",
-    btnText: "Talk to Us",
-    link: "https://www.facebook.com/messages/t/100987332809146",
+    btnText: "Booked Now",
+    link: "https://massageremedialcare.clinicsense.com/book/",
     image: Hero_logo2,
     logo: Hero_logo2,
     hero_content: [
